@@ -177,14 +177,14 @@ void setMotors(int leftMotor, int rightMotor){
 	if(leftMotor > 100){
 		leftMotor = 100;
 	}
-	if(leftMotor < 0){
-		leftMotor = 0;
+	if(leftMotor < -100){
+		leftMotor = -100;
 	}
 	if(rightMotor > 100){
 		rightMotor = 100;
 	}
-	if(rightMotor < 0){
-		rightMotor = 0;
+	if(rightMotor < -100){
+		rightMotor = -100;
 	}
 	set_motors((leftMotor*256)/100, (rightMotor*256)/100);
 }
